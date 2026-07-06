@@ -11,6 +11,39 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class CalcController {
+	
+	////A.자바방식의 개발자가 직접 Obj를 관리는 방식
+	//	private CalcService calcService = new CalcService();
+	//	
+	//	@GetMapping("/add")
+	//	public String add(@RequestParam int a, @RequestParam int b) {
+	//		return calcService.add(a,b) ;
+	//	}
+	
+	////B.자바방식의 개발자가 직접 Obj를 관리는 방식
+	//	@Autowired
+	//	private CalcService calcService;
+	//	
+	//	
+	//	@GetMapping("/add")
+	//	public String add(@RequestParam int a, @RequestParam int b) {
+	//		return calcService.add(a,b);
+	//	}
+	
+	////C.생성자 방식
+	//    private final CalcService calcService;
+	//
+	//    public CalcController(CalcService calcService) {
+	//        this.calcService = calcService;
+	//    }
+	//
+	//    @GetMapping("/add")
+	//    public String add(@RequestParam int a, @RequestParam int b) {
+	//        return calcService.add(a, b);
+	//    }
+	
+	
+	// D. 롬복 방식
 	private final CalcService calcService;
 	
     @GetMapping("/add")

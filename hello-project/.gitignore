@@ -1,0 +1,40 @@
+# =========================================================================
+# Spring Boot 3 + STS / Eclipse + Gradle / Maven 기본 .gitignore
+# =========================================================================
+
+# 빌드 결과물 (컴파일된 파일 및 패키지)
+bin/
+build/
+out/
+target/
+*.class
+*.war
+*.ear
+*.jar
+
+# 이클립스 / STS (Spring Tool Suite) 설정 파일
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+.factorypath
+
+# 인텔리제이 (IntelliJ IDEA) 설정 파일 (혹시 나중에 쓸 수도 있으니 미리 방지)
+.idea/
+*.iml
+*.iws
+
+# 로그 파일
+*.log
+
+# 운영체제 생성 파일 (맥북/윈도우 시스템 임시 파일)
+.DS_Store
+Thumbs.db
+
+# Gradle 관련 (래퍼 파일은 포함하되, 로컬 캐시 등은 제외)
+.gradle/
+/build/
+
+# Maven 관련
+/.mvn/

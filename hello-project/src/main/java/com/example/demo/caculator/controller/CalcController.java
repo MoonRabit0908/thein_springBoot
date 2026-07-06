@@ -20,7 +20,7 @@ public class CalcController {
 	//		return calcService.add(a,b) ;
 	//	}
 	
-	////B.자바방식의 개발자가 직접 Obj를 관리는 방식
+	////B.Autowired 사용
 	//	@Autowired
 	//	private CalcService calcService;
 	//	

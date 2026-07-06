@@ -46,21 +46,29 @@ public class CalcController {
 	// D. 롬복 방식
 	private final CalcService calcService;
 	
+	//http://localhost:8080/add?a=7&b=5
+	//결과 12
     @GetMapping("/add")
     public int add(@RequestParam("a") int a, @RequestParam("b") int b) {
         return calcService.add(a, b);
     }
     
+	//http://localhost:8080/add?a=7&b=5
+	//결과 2
     @GetMapping("/minus")
     public int minus(@RequestParam("a") int a, @RequestParam("b") int b) {
         return calcService.minus(a, b);
     }
     
+	//http://localhost:8080/add?a=7&b=5
+	//결과 35
     @GetMapping("/multiply")
     public int multiply(@RequestParam("a") int a, @RequestParam("b") int b) {
         return calcService.multiply(a, b);
     }
     
+	//http://localhost:8080/add?a=7&b=5
+	//결과 1.4
     @GetMapping("/divide")
     public double divide(@RequestParam("a") double a, @RequestParam("b") double b) {
         return calcService.divide(a, b);
